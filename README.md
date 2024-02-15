@@ -1,29 +1,31 @@
+# Lab: Class 29 - Django Custom User 
 
-# LAB - Class xx
-## Project: Project Name Here
-### Author: Student/Group Name
+## Author: Xin Deng
 
 ### Links and Resources
-- [Back-end Server URL] # Fill in when applicable
-- [Front-end Application URL] # Fill in when applicable
 
-### Setup
-- Create a `.env` file with the following requirements:
-  - PORT - Port Number
-  - DATABASE_URL - URL to the running Postgres instance/db
+- chatGPT
+- [Class 29 Demo](https://github.com/codefellows/seattle-code-python-401d24/tree/main/class-29/demo)
 
-### How to Initialize/Run Your Application
-- Example: `python main.py`
 
-### How to Use Your Library
-- Provide instructions here if applicable
+### Overview - Django Custom User
 
-### Tests
+This is a project to add a custom user model to a Django application
+
+#### Version 1.0
+
+Build 1.0 Feature Tasks
+
+1. Create web site in Django
+2. Create a model and add to admin
+3. Add previous urls and views to project and app in addition to accounts app
+4. Add additional templates to support all views
+
+
+### How to Initialize/Run Application
+
+- `python manage.py runserver`
+
 #### How to Run Tests
-- Describe how to run tests
 
-#### Tests of Note
-- Any noteworthy information about the tests
-
-#### Incomplete Tests
-- Describe any tests that were not completed or skipped
+- `python manage.py test`

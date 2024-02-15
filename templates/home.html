@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mx-auto">
+  <div class="flowbite bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    {% if user.is_authenticated %}
+    <p class="text-lg text-center mb-4">Hi {{ user.username }}!</p>
+    <form action="{% url 'logout' %}" method="post" class="text-center">
+      {% csrf_token %}
+      <button type="submit"
+        class="flowbite-button flowbite-button-blue inline-block font-bold py-2 px-4 rounded">
+        Log Out
+      </button>
+    </form>
+    {% else %}
+    <p class="text-lg text-center mb-4">You are not logged in</p>
+    <div class="text-center">
+      <a href="{% url 'login' %}"
+        class="flowbite-button flowbite-button-blue font-bold py-2 px-4 rounded">Log
+        In</a>
+      <a href="{% url 'signup' %}"
+        class="flowbite-button flowbite-button-green font-bold py-2 px-4 rounded">Sign
+        Up</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
