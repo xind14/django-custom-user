@@ -11,3 +11,6 @@ class CustomUserAdmin(UserAdmin):
     list_display = ["email", "username",]
 
 admin.site.register(CustomUser, CustomUserAdmin)
+
+# after admin in accounts make migrations then migrate
+# run server, python manage.py createsuperuser
